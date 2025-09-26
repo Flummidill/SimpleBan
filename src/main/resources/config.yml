@@ -1,0 +1,24 @@
+# # # # # # # # # # # # # # #
+#  SimpleBan Configuration  #
+#       By Flummidill       #
+# # # # # # # # # # # # # # #
+
+# Announce Bans (Standard: Admins)
+# Must be Admins, Players, Everyone or No
+announce-bans: Admins
+
+# Timezone (Standard: UTC)
+# Must be a Valid Timezone (UTC +/- X, GMT +/- X, America/New_York, Europe/Berlin, etc.)
+timezone: UTC
+
+# Date Format (Standard: dd/MM/yyyy HH:mm:ss)
+# Must be a Valid Date Format (dd/MM/yyyy HH:mm:ss, yyyy-MM-dd HH:mm, MM-dd-yyyy HH:mm:ss, etc.)
+date-format: dd/MM/yyyy HH:mm:ss
+
+# Shows the Timezone on the Ban Screen (Standard: true)
+# Must be true or false
+show-timezone: true
+
+# The Config Version
+# Do not change this Value
+config-version: ${project.version}

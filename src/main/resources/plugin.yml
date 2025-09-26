@@ -1,0 +1,55 @@
+name: SimpleBan
+main: com.flummidill.simpleban.SimpleBan
+version: ${project.version}
+api-version: 1.13
+commands:
+  tempban:
+    description: Temporarily bans a player from the server.
+    usage: "Usage: /tempban <player> <duration> [reason]"
+    permission: simpleban.tempban
+    permission-message: You do not have permission to use this command.
+  permban:
+    description: Permanently bans a player from the server.
+    usage: "Usage: /permban <player> [reason]"
+    permission: simpleban.permban
+    permission-message: You do not have permission to use this command.
+  banlist:
+    description: Shows all banned players.
+    usage: "Usage: /banlist"
+    permission: simpleban.banlist
+    permission-message: You do not have permission to use this command.
+  baninfo:
+    description: Shows information about a player's ban.
+    usage: "Usage: /baninfo <player>"
+    permission: simpleban.baninfo
+    permission-message: You do not have permission to use this command.
+  unban:
+    description: Unbans a player from the server.
+    usage: "Usage: /unban <player>"
+    permission: simpleban.unban
+    permission-message: You do not have permission to use this command.
+permissions:
+  simpleban.admin:
+    description: Allows use of all SimpleBan Commands
+    default: op
+    children:
+        simpleban.tempban: true
+        simpleban.permban: true
+        simpleban.banlist: true
+        simpleban.baninfo: true
+        simpleban.unban: true
+  simpleban.tempban:
+    description: Allows use of the TempBan Command
+    default: op
+  simpleban.permban:
+    description: Allows use of the PermBan Command
+    default: op
+  simpleban.banlist:
+    description: Allows use of the BanList Command
+    default: op
+  simpleban.baninfo:
+    description: Allows use of the BanInfo Command
+    default: op
+  simpleban.unban:
+    description: Allows use of the UnBan Command
+    default: op
