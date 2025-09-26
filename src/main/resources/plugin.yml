@@ -4,27 +4,27 @@ version: ${project.version}
 api-version: 1.13
 commands:
   tempban:
-    description: Temporarily bans a player from the server.
+    description: Temporarily bans a Player.
     usage: "Usage: /tempban <player> <duration> [reason]"
     permission: simpleban.tempban
     permission-message: You do not have permission to use this command.
   permban:
-    description: Permanently bans a player from the server.
+    description: Permanently bans a Player.
     usage: "Usage: /permban <player> [reason]"
     permission: simpleban.permban
     permission-message: You do not have permission to use this command.
   banlist:
-    description: Shows all banned players.
+    description: View a List of all banned Players.
     usage: "Usage: /banlist"
     permission: simpleban.banlist
     permission-message: You do not have permission to use this command.
   baninfo:
-    description: Shows information about a player's ban.
+    description: View Information about bannes Player.
     usage: "Usage: /baninfo <player>"
     permission: simpleban.baninfo
     permission-message: You do not have permission to use this command.
   unban:
-    description: Unbans a player from the server.
+    description: Unbans a player.
     usage: "Usage: /unban <player>"
     permission: simpleban.unban
     permission-message: You do not have permission to use this command.
