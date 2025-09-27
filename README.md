@@ -1,6 +1,6 @@
 <div align="center" id="toc">
   <a href="https://github.com/Flummidill/SimpleBan/releases">
-    <img src="https://github.com/Flummidill/SimpleBan/blob/1.0.0/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
+    <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
   </a>
 
   <ul style="list-style: none">
