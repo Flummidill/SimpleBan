@@ -18,7 +18,7 @@
 <hr/>
 
 
-## 🎯 Features 🎯
+## 🎯 Features
 
 - **Temporary and Permanent Bans**  
 Handle rule-breakers effectively by issuing either timed bans or permanent bans. This keeps your community fair and under control.    
