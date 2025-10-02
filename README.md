@@ -10,7 +10,7 @@
   </ul>
   
   <a href="https://github.com/Flummidill/SimpleBan/releases">
-    <img src="https://img.shields.io/github/downloads/Flummidill/SimpleBan/v1.0.0/SimpleBan-1.0.0.jar?style=for-the-badge&label=Downloads&color=29A100"</img>
+    <img src="https://img.shields.io/github/downloads/Flummidill/SimpleBan/v1.0.1/SimpleBan-1.0.1.jar?style=for-the-badge&label=Downloads&color=29A100"</img>
   </a>
 </div>
 
