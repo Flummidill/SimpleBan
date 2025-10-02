@@ -1,7 +1,40 @@
-<div align="center">
-  <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
-  <h1>SimpleBan</h1>
+<div align="center" id="toc">
+  <a href="https://github.com/Flummidill/SimpleBan/releases">
+    <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
+  </a>
+
+  <ul style="list-style: none">
+    <summary>
+      <h1>SimpleBan</h1>
+    </summary>
+  </ul>
+  
+  <a href="https://github.com/Flummidill/SimpleBan/releases">
+    <img src="https://img.shields.io/github/downloads/Flummidill/SimpleBan/v1.0.0/SimpleBan-1.0.0.jar?style=for-the-badge&label=Downloads&color=29A100"</img>
+  </a>
 </div>
+
+
+<hr/>
+
+
+## 🎯 Features
+
+- **Temporary and Permanent Bans**  
+Handle rule-breakers effectively by issuing either timed bans or permanent bans. This keeps your community fair and under control.    
+
+- **Ban List Overview**  
+Get a quick overview of all currently banned Players, so nothing slips through the cracks.  
+
+- **Announce Bans**  
+Choose who sees ban Announcements, letting you balance between Admin- and Public-Transparency.  
+
+- **Timezone & Date Customization**  
+Show bans in your preferred timezone and Date format, ensuring clarity across different Staff members.  
+
+
+<hr/>
+
 
 ### Admin Commands:
 ```
