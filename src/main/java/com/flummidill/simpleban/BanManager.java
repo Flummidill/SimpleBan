@@ -228,7 +228,7 @@ public class BanManager {
 
     public void removeExpiredBans() {
         try (PreparedStatement ps = connection.prepareStatement(
-                "DELETE FROM bans WHERE unban_time <= ?")) {
+                "DELETE FROM bans WHERE unban_time <= ? AND type != 'PERM'")) {
             ps.setLong(1, Instant.now().getEpochSecond());
             ps.executeUpdate();
         } catch (SQLException e) {
