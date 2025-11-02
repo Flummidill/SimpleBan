@@ -1,21 +1,12 @@
-<div align="center" id="toc">
-  <a href="https://github.com/Flummidill/SimpleBan/releases">
-    <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
-  </a>
-
-  <ul style="list-style: none">
-    <summary>
-      <h1>SimpleBan</h1>
-    </summary>
-  </ul>
+<div align="center">
+  <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
   
-  <a href="https://github.com/Flummidill/SimpleBan/releases">
-    <img src="https://img.shields.io/github/downloads/Flummidill/SimpleBan/v1.0.1/SimpleBan-1.0.1.jar?style=for-the-badge&label=Downloads&color=29A100"</img>
+  <h1>SimpleBan</h1>
+  
+  <a href="https://modrinth.com/plugin/simple_ban/versions">
+    <img src="https://img.shields.io/modrinth/dt/simple_ban?style=for-the-badge&label=Downloads&color=29A100">
   </a>
 </div>
-
-
-<hr/>
 
 
 ## 🎯 Features
