@@ -205,6 +205,13 @@ public class CommandHandler implements CommandExecutor {
     }
 
     private boolean handleUnBan(CommandSender sender, String targetName) {
+        if (targetName.equals("*")) {
+            manager.removeAllBans();
+            manager.sendUnBanMessage("Every Player", sender);
+
+            return true;
+        }
+
         UUID targetUUID = manager.getOfflinePlayerUUID(targetName);
         if (targetUUID == null) {
             sender.sendMessage("§cPlayer not found: §a" + targetName);

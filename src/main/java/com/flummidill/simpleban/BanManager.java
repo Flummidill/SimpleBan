@@ -188,6 +188,15 @@ public class BanManager {
         }
     }
 
+    public void removeAllBans() {
+        try (PreparedStatement ps = connection.prepareStatement(
+                "DELETE FROM bans")) {
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void sendUnBanMessage(String player, CommandSender sender) {
         String author = sender.getName();
 
