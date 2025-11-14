@@ -30,14 +30,14 @@ commands:
     permission-message: You do not have permission to use this command.
 permissions:
   simpleban.admin:
-    description: Allows use of all SimpleBan Commands
+    description: Allows use of all Admin Commands
     default: op
     children:
-        simpleban.tempban: true
-        simpleban.permban: true
-        simpleban.banlist: true
-        simpleban.baninfo: true
-        simpleban.unban: true
+      simpleban.tempban: true
+      simpleban.permban: true
+      simpleban.banlist: true
+      simpleban.baninfo: true
+      simpleban.unban: true
   simpleban.tempban:
     description: Allows use of the TempBan Command
     default: op

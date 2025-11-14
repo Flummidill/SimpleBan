@@ -237,6 +237,14 @@ public class BanManager {
     }
 
     public TextComponent getBanMessage(UUID uuid) {
+        if (uuid.toString().startsWith("00000000-0000-0000-0009")) {
+            return getBedrockBanMessage(uuid);
+        } else {
+            return getJavaBanMessage(uuid);
+        }
+    }
+
+    public TextComponent getJavaBanMessage(UUID uuid) {
         String[] info = getBanInfo(uuid);
         if (info == null || info.length < 4) {
             return new TextComponent(ChatColor.RED + "Failed to Load Ban-Data");
@@ -258,6 +266,7 @@ public class BanManager {
 
         TextComponent ban_message = new TextComponent();
 
+
         // 1. Ban Type
 
         TextComponent ban_type = new TextComponent();
@@ -266,13 +275,13 @@ public class BanManager {
         l1p1.setColor(ChatColor.RED);
         ban_type.addExtra(l1p1);
 
-        TextComponent permPart = new TextComponent((type.equals("TEMP") ? "TEMPORARILY" : (type.equals("PERM") ? "PERMANENTLY" : type)));
-        permPart.setColor(ChatColor.AQUA);
-        ban_type.addExtra(permPart);
+        TextComponent l1p2 = new TextComponent((type.equals("TEMP") ? "TEMPORARILY" : (type.equals("PERM") ? "PERMANENTLY" : type)));
+        l1p2.setColor(ChatColor.AQUA);
+        ban_type.addExtra(l1p2);
 
-        TextComponent rest = new TextComponent(" banned from this Server!");
-        rest.setColor(ChatColor.RED);
-        ban_type.addExtra(rest);
+        TextComponent l1p3 = new TextComponent(" banned from this Server!");
+        l1p3.setColor(ChatColor.RED);
+        ban_type.addExtra(l1p3);
 
         ban_message.addExtra(ban_type);
 
@@ -339,6 +348,121 @@ public class BanManager {
         ban_expire.addExtra(l5p2);
 
         ban_message.addExtra(ban_expire);
+
+
+        return ban_message;
+
+    }
+
+    public TextComponent getBedrockBanMessage(UUID uuid) {
+        String[] info = getBanInfo(uuid);
+        if (info == null || info.length < 4) {
+            return new TextComponent(ChatColor.RED + "Failed to Load Ban-Data");
+        }
+
+        String type = info[0];
+        String author = info[1];
+        String reason = info[2];
+        String expire_time = info[3];
+
+        if (type == null) type = "ERROR";
+        if (author == null) author = "ERROR";
+        if (reason == null) reason = "ERROR";
+        if (expire_time == null) expire_time = "ERROR";
+
+
+        // ------------------------------------------------------------ \\
+
+
+        TextComponent ban_message = new TextComponent();
+
+
+        // 1. Ban Type
+
+        TextComponent ban_type = new TextComponent();
+
+        TextComponent p1 = new TextComponent("You have been ");
+        p1.setColor(ChatColor.RED);
+        ban_type.addExtra(p1);
+
+        TextComponent p2 = new TextComponent((type.equals("TEMP") ? "TEMPORARILY" : (type.equals("PERM") ? "PERMANENTLY" : type)));
+        p2.setColor(ChatColor.AQUA);
+        ban_type.addExtra(p2);
+
+        TextComponent p3 = new TextComponent(" banned from this Server");
+        p3.setColor(ChatColor.RED);
+        ban_type.addExtra(p3);
+
+        ban_message.addExtra(ban_type);
+
+
+        // 2. Seperator 1
+
+        TextComponent seperator1 = new TextComponent();
+
+        TextComponent p4 = new TextComponent(" by ");
+        p4.setColor(ChatColor.GRAY);
+        seperator1.addExtra(p4);
+
+        ban_message.addExtra(seperator1);
+
+
+        // 3. Ban Author
+
+        TextComponent ban_author = new TextComponent();
+
+        TextComponent p5 = new TextComponent(author);
+        p5.setColor(ChatColor.RED);
+        ban_author.addExtra(p5);
+
+        ban_message.addExtra(ban_author);
+
+
+        // 4. Seperator 2
+
+        TextComponent seperator2 = new TextComponent();
+
+        TextComponent p6 = new TextComponent(" for ");
+        p6.setColor(ChatColor.GRAY);
+        seperator2.addExtra(p6);
+
+        ban_message.addExtra(seperator2);
+
+
+        // 4. Ban Reason
+
+        TextComponent ban_reason = new TextComponent();
+
+        TextComponent p7 = new TextComponent("\"" + reason + "\"");
+        p7.setColor(ChatColor.GRAY);
+        ban_reason.addExtra(p7);
+
+        ban_message.addExtra(ban_reason);
+
+        // 5. TEMP-BANS
+        if (type.equals("TEMP")) {
+            // 5.1 Seperator 3
+
+            TextComponent seperator3 = new TextComponent();
+
+            TextComponent p8 = new TextComponent(" until ");
+            p8.setColor(ChatColor.GRAY);
+            seperator3.addExtra(p8);
+
+            ban_message.addExtra(seperator3);
+
+
+            // 5.2 Ban Expire-Time
+
+            TextComponent ban_expire = new TextComponent();
+
+            TextComponent p9 = new TextComponent((expire_time.equals("-1") ? "NEVER" : getUnbanTime(expire_time)));
+            p9.setColor(ChatColor.RED);
+            ban_expire.addExtra(p9);
+
+            ban_message.addExtra(ban_expire);
+        }
+
 
         return ban_message;
 
