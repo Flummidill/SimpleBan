@@ -15,11 +15,17 @@
 - **Temporary and Permanent Bans**  
 Handle rule-breakers effectively by issuing either timed bans or permanent bans. This keeps your community fair and under control.    
 
+####
+
 - **Ban List Overview**  
 Get a quick overview of all currently banned Players, so nothing slips through the cracks.  
 
+####
+
 - **Announce Bans**  
 Choose who sees ban Announcements, letting you balance between Admin- and Public-Transparency.  
+
+####
 
 - **Timezone & Date Customization**  
 Show bans in your preferred timezone and Date format, ensuring clarity across different Staff members.  
