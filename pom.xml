@@ -4,9 +4,9 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.flummidill.simpleban</groupId>
+    <groupId>com.pixelcatt.simpleban</groupId>
     <artifactId>SimpleBan</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>SimpleBan</name>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.21.8-R0.1-SNAPSHOT</version>
+            <version>1.21.10-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -68,7 +68,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>org.json</pattern>
-                                    <shadedPattern>com.flummidill.libs.json</shadedPattern>
+                                    <shadedPattern>com.pixelcatt.libs.json</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

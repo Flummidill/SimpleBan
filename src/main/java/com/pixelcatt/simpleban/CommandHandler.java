@@ -1,4 +1,4 @@
-package com.flummidill.simpleban;
+package com.pixelcatt.simpleban;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.*;

@@ -1,4 +1,4 @@
-package com.flummidill.simpleban;
+package com.pixelcatt.simpleban;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.entity.Player;
@@ -83,7 +83,7 @@ public class JoinListener implements Listener {
             Text2.setUnderlined(true);
             Text2.setClickEvent(new ClickEvent(
                 ClickEvent.Action.OPEN_URL,
-                "https://github.com/Flummidill/SimpleBan/releases/latest"
+                "https://modrinth.com/plugin/simple_ban/versions"
             ));
             message2.addExtra(Text2);
 

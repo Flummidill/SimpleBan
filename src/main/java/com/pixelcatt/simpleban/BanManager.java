@@ -1,4 +1,4 @@
-package com.flummidill.simpleban;
+package com.pixelcatt.simpleban;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.TextComponent;

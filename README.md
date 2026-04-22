@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Flummidill/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
+  <img src="https://github.com/PixelCattt/SimpleBan/blob/HEAD/icons/SimpleBan-250x250.png?raw=true" alt="SimpleBan-Icon">
   
   <h1>SimpleBan</h1>
   

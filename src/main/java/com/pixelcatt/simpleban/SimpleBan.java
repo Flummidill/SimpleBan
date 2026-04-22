@@ -1,4 +1,4 @@
-package com.flummidill.simpleban;
+package com.pixelcatt.simpleban;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -29,7 +29,7 @@ public class SimpleBan extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("~ Created by Flummidill ~");
+        getLogger().info("~ Created by PixelCatt ~");
 
         // Initialize Ban-Manager
         getLogger().info("Initializing Ban-Manager...");
